@@ -1,0 +1,473 @@
+@font-face {
+  font-family: "Museo Sans 500";
+  src: url("./assets/fonts/MuseoSans-500.woff2") format("woff2"),
+    url("./assets/fonts/MuseoSans-500.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans 300";
+  src: url("./assets/fonts/MuseoSans-300.woff2") format("woff2"),
+    url("./assets/fonts/MuseoSans-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo 300";
+  src: url("./assets/fonts/Museo300-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Museo300-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans 700";
+  src: url("./assets/fonts/MuseoSans-700.woff2") format("woff2"),
+    url("./assets/fonts/MuseoSans-700.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo 900";
+  src: url("./assets/fonts/Museo900-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Museo900-Regular.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo 500";
+  src: url("./assets/fonts/Museo500-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Museo500-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo 700";
+  src: url("./assets/fonts/Museo-700.woff2") format("woff2"),
+    url("./assets/fonts/Museo-700.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded 500";
+  src: url("./assets/fonts/MuseoSansRounded-500.woff2") format("woff2"),
+    url("./assets/fonts/MuseoSansRounded-500.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/************GENERAL************/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body,
+html {
+  font-size: 20px;
+  font-family: "Museo 500";
+}
+:root {
+  --bg-dark-blue: #434b9c;
+  --white: #ffffff;
+  --hover-color: #baabeb;
+  --light-grey: #0000000f;
+  --white-variation: #f8f8f8;
+}
+a:visited {
+  color: var(--white);
+}
+.container {
+  display: block;
+  position: fixed;
+  left: 90px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #434b9c;
+}
+.column {
+  width: 50%;
+}
+.left {
+  width: 50%;
+}
+.main-content {
+  margin-top: 205px;
+  margin-left: 60px;
+}
+
+/************NAVIGATION************/
+.aside {
+  width: 90px;
+  background: var(--bg-dark-blue);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 0px 6px var(--light-grey);
+  z-index: 3;
+}
+.aside .logo {
+  position: absolute;
+  top: 17px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--white);
+  width: 100%;
+  text-align: center;
+}
+.hamburger-icon {
+  position: absolute;
+  top: 101px;
+  padding: 32px;
+}
+.nav {
+  background-color: var(--white);
+  position: absolute;
+  top: 200px;
+  height: 100%;
+  width: 100%;
+}
+.language {
+  font-family: "Museo 900";
+  font-size: 20px;
+  text-align: center;
+  width: 24px;
+  height: 55px;
+  border-bottom: 1px solid var(--bg-dark-blue);
+  margin: 40px auto 32px;
+}
+.aside .nav li {
+  display: block;
+  padding-bottom: 30px;
+}
+.aside .nav li a {
+  color: var(--bg-dark-blue);
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+.aside .nav li a i {
+  border-bottom: 1px solid var(--bg-dark-blue);
+  padding-bottom: 30px;
+}
+.fa-ticket {
+  padding-top: 30px;
+  border-top: 1px solid var(--bg-dark-blue);
+}
+
+/************LEFT COLUMN************/
+.now {
+  font-size: 18px;
+  font-family: "Museo Sans Rounded";
+  font-style: italic;
+  background-color: var(--white);
+  padding: 7px 15px;
+  color: var(--bg-dark-blue);
+  text-align: left;
+  border-radius: 4px;
+}
+h1 {
+  margin-top: 41px;
+  font-size: 80px;
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: "Museo 900";
+  margin-bottom: 120px;
+}
+.artist {
+  position: absolute;
+  top: 350px;
+  left: 60px;
+  z-index: 5;
+}
+
+.calendar {
+  color: var(--white-variation);
+  margin-right: 13px;
+  width: 42px;
+  height: 42px;
+  display: block;
+  background-color: var(--hover-color);
+  text-align: center;
+  border-radius: 50%;
+}
+
+.main-content span i {
+  font-size: 22px;
+  line-height: 42px;
+}
+
+.left p {
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+/*********Buttons*********/
+.buy-ticket {
+  font-size: 20px;
+  color: white;
+  width: 240px;
+  height: 60px;
+  border: 1px solid var(--white);
+  background-color: var(--bg-dark-blue);
+  position: relative;
+  cursor: pointer;
+}
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--hover-color);
+  transition: transform 250ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.slide:hover::before,
+.slide:focus::before {
+  transform: scaleX(1);
+}
+.slide {
+  transition: color 250ms ease-in-out;
+  z-index: 1;
+}
+.slide:hover,
+.slide:focus {
+  color: var(--white);
+}
+
+.support-museum {
+  font-size: 20px;
+  font-family: "Museo 900";
+  color: var(--white-variation);
+  width: 240px;
+  height: 60px;
+  background-color: var(--bg-dark-blue);
+  border: none;
+  position: fixed;
+  top: 28px;
+  right: 60px;
+}
+.support-museum:hover {
+  background-color: var(--hover-color);
+  transition: all 150ms ease-in-out;
+}
+/*********Social Icons*********/
+.wrapper h4 {
+  font-size: 20px;
+  margin-right: 46px;
+  font-family: "Museo 900";
+  color: var(--white-variation);
+  margin-top: 120px;
+}
+.wrapper {
+  display: inline-flex;
+  margin-left: 60px;
+  margin-top: 120px;
+}
+.wrapper .icon {
+  margin-right: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .icon span {
+  color: var(--white-variation);
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 100px;
+}
+.wrapper .icon span i {
+  font-size: 34px;
+  line-height: 60px;
+}
+.wrapper .icon:hover span {
+  background-color: var(--hover-color);
+  transition: all 0.5s ease-in;
+}
+/************RIGHT COLUMN************/
+.right {
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: relative;
+}
+.painting {
+  width: 100%;
+  min-height: 100%;
+}
+.mini {
+  float: left;
+  margin: 11px 11px 11px 45px;
+  clear: left;
+}
+.subtext {
+  margin-top: 15px;
+  font-size: 14px;
+  color: var(--bg-dark-blue);
+}
+figcaption {
+  background: rgba(250, 250, 250, 0.5);
+  bottom: 0;
+  height: 68px;
+  position: absolute;
+  width: 100%;
+}
+
+/************RESPONSIVE************/
+@media (max-width: 1100px) {
+  .column {
+    width: 100%;
+  }
+  .row {
+    flex-direction: row;
+  }
+  .support-museum {
+    color: var(--bg-dark-blue);
+    background-color: var(--white-variation);
+  }
+  .support-museum:hover {
+    background-color: var(--hover-color);
+    color: var(--white);
+  }
+  .wrapper h4 {
+    display: none;
+  }
+  .wrapper {
+    display: block;
+    margin-top: -100px;
+    margin-bottom: 20px;
+  }
+  .wrapper .icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 90px;
+  }
+  .wrapper .icon span i {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 990px) {
+  h1 {
+    margin-bottom: 200px;
+    font-size: 60px;
+  }
+  .aside {
+    display: none;
+  }
+  .container {
+    left: 0;
+  }
+  .main-content {
+    margin-left: 30px;
+  }
+  .artist {
+    margin-left: -30px;
+    top: 340px;
+  }
+}
+@media (max-width: 555px) {
+  .wrapper .icon span i {
+    font-size: 20px;
+  }
+  .wrapper .icon:hover span {
+    background: none;
+  }
+  figcaption {
+    height: 80px;
+    text-align: center;
+  }
+  .mini {
+    margin: 11px;
+  }
+}
+
+/*--------------- Toggler ---------------*/
+.nav-toggler {
+  height: 40px;
+  width: 45px;
+  border: 1px solid var(--bg-dark-blue);
+  cursor: pointer;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  border-radius: 5px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 5;
+}
+
+.nav-toggler:hover {
+  background: var(--hover-color);
+}
+
+.nav-toggler span {
+  height: 2px;
+  width: 18px;
+  background: var(--bg-dark-blue);
+  display: inline-block;
+  position: relative;
+}
+
+.nav-toggler.open span {
+  background-color: transparent;
+}
+
+.nav-toggler.open span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.nav-toggler span::before {
+  content: '';
+  height: 2px;
+  width: 18px;
+  background: var(--bg-dark-blue);
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+
+.nav-toggler span::after {
+  content: '';
+  height: 2px;
+  width: 18px;
+  background: var(--bg-dark-blue);
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.nav-toggler.open span::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
